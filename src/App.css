@@ -1,0 +1,40 @@
+* {
+  /*creating varaibles*/
+  --headerFontSize:2rem;
+  --headerPadding:0.5rem;
+  --footerFontSize:1rem;
+  --footerPadding:1rem;
+  
+}
+  header{
+  background-color: lightgreen;
+  font-size: var(--headerFontSize);
+  padding: var(--headerPadding);
+  text-align: center;
+}
+
+main{
+  background-color: lightblue;
+  font-size: 1.5rem;
+  text-align: center;
+  height: calc(
+    100vh 
+    - var(--headerFontSize)
+    - (2*var(--headerPadding))
+    - var(--footerFontSize)
+    - (2*var(--footerPadding))
+    );
+  /*vh:visual height*/
+  overflow-y: auto;
+  /* overflow of text is smoothly adjusted*/
+
+}
+
+footer{
+  background-color: lightgreen;
+  font-size: var(--footerFontSize);
+  padding: var(--footerPadding);
+  text-align: center;
+}
+
+
